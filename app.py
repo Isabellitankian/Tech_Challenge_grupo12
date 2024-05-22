@@ -1,7 +1,7 @@
 import csv
 import requests
 import streamlit as st
-from fastapi import FastAPI
+
 
 class Crawler:
 
@@ -73,15 +73,4 @@ if __name__ == '__main__':
   
     main()
 
-    
-
-app = FastAPI()
-
-@app.get('/')
-def get_todos_arquivos():
-    return request_embrapa()
-
-@app.get('/{arquivo:str}')
-def get_arquivo(arquivo:str):
-    return request_embrapa(arquivo)
 
