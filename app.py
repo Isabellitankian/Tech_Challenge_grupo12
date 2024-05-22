@@ -1,7 +1,6 @@
 import csv
 import requests
 import streamlit as st
-import matplotlib.pyplot as plt
 from fastapi import FastAPI
 
 class Crawler:
